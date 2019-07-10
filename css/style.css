@@ -1,0 +1,132 @@
+.bar {
+  width: 100px;
+  height: 50px;
+  background-color: rgba(66, 237, 148, 0.6);
+  animation-duration: 3s;
+  position: relative;
+  margin-bottom: 10px; }
+  .bar:before {
+    position: absolute;
+    right: 0;
+    margin-right: -50px;
+    top: 50%;
+    background: #667;
+    padding: 10px;
+    border-radius: 50%;
+    animation-duration: 2s;
+    animation-fill-mode: both; }
+  .bar.bar_0 {
+    width: 30%;
+    animation-name: bar_animate_0; }
+    .bar.bar_0:before {
+      content: '30';
+      animation-name: label_animate_0; }
+  .bar.bar_1 {
+    width: 50%;
+    animation-name: bar_animate_1; }
+    .bar.bar_1:before {
+      content: '50';
+      animation-name: label_animate_1; }
+  .bar.bar_2 {
+    width: 60%;
+    animation-name: bar_animate_2; }
+    .bar.bar_2:before {
+      content: '60';
+      animation-name: label_animate_2; }
+  .bar.bar_3 {
+    width: 70%;
+    animation-name: bar_animate_3; }
+    .bar.bar_3:before {
+      content: '70';
+      animation-name: label_animate_3; }
+  .bar.bar_4 {
+    width: 75%;
+    animation-name: bar_animate_4; }
+    .bar.bar_4:before {
+      content: '75';
+      animation-name: label_animate_4; }
+
+.bar_0:before {
+  animation-delay: 0.3s; }
+
+.bar_1:before {
+  animation-delay: 0.4s; }
+
+.bar_2:before {
+  animation-delay: 0.5s; }
+
+.bar_3:before {
+  animation-delay: 0.6s; }
+
+.bar_4:before {
+  animation-delay: 0.7s; }
+
+@keyframes bar_animate_0 {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left; }
+  6%, 100% {
+    transform: scaleX(1);
+    transform-origin: left; } }
+
+@keyframes label_animate_0 {
+  0% {
+    transform: scale(0); }
+  6%, 100% {
+    transform: scale(1) translateY(-50%); } }
+
+@keyframes bar_animate_1 {
+  0%, 6.5% {
+    transform: scaleX(0);
+    transform-origin: left; }
+  16.5%, 100% {
+    transform: scaleX(1);
+    transform-origin: left; } }
+
+@keyframes label_animate_1 {
+  0%, 6.5% {
+    transform: scale(0); }
+  16.5%, 100% {
+    transform: scale(1) translateY(-50%); } }
+
+@keyframes bar_animate_2 {
+  0%, 17% {
+    transform: scaleX(0);
+    transform-origin: left; }
+  29%, 100% {
+    transform: scaleX(1);
+    transform-origin: left; } }
+
+@keyframes label_animate_2 {
+  0%, 17% {
+    transform: scale(0); }
+  29%, 100% {
+    transform: scale(1) translateY(-50%); } }
+
+@keyframes bar_animate_3 {
+  0%, 29.5% {
+    transform: scaleX(0);
+    transform-origin: left; }
+  42.5%, 100% {
+    transform: scaleX(1);
+    transform-origin: left; } }
+
+@keyframes label_animate_3 {
+  0%, 29.5% {
+    transform: scale(0); }
+  42.5%, 100% {
+    transform: scale(1) translateY(-50%); } }
+
+@keyframes bar_animate_4 {
+  0%, 43% {
+    transform: scaleX(0);
+    transform-origin: left; }
+  58%, 100% {
+    transform: scaleX(1);
+    transform-origin: left; } }
+
+@keyframes label_animate_4 {
+  0%, 43% {
+    transform: scale(0); }
+  58%, 100% {
+    transform: scale(1) translateY(-50%); } }
