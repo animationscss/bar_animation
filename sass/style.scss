@@ -11,13 +11,12 @@
     right: 0;
     margin-right: -50px;
     top: 50%;
-    //transform: translateY(-50%);
     background: #667;
     padding: 10px;
     border-radius: 50%;
     animation-duration: 2s;
-    //animation-delay: 0.2s;
     animation-fill-mode: both;
+    transform-origin: top center;
   }
 
   &.bar_0 {
@@ -67,7 +66,7 @@
   }
 }
 
-$animationDelayLabel: 0.3;
+$animationDelayLabel: 0.4;
 @for $i from 0 through 4 {
   .bar_#{$i}:before {
     animation-delay: #{$animationDelayLabel}s;
